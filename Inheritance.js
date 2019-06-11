@@ -13,7 +13,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
-var Constants = require("./Constants");
+var Constants = require("./GoodConstants");
 var A = /** @class */ (function () {
     function A() {
     }
@@ -36,7 +36,7 @@ var B = /** @class */ (function (_super) {
     };
     B.prototype.div = function () {
         console.log("Div Method");
-        return Constants.a / Constants.c;
+        return Constants.ConfigConstant.a / Constants.ConfigConstant.c;
     };
     return B;
 }(A));

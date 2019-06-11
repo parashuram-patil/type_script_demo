@@ -1,4 +1,4 @@
-import * as Constants from './Constants'
+import * as Constants from './GoodConstants'
 
 abstract class A {
     add() {
@@ -21,7 +21,7 @@ class B extends A {
     div(): Number {
         console.log("Div Method");
 
-        return Constants.a/Constants.c;
+        return Constants.ConfigConstant.a/Constants.ConfigConstant.c;
     }
 }
 
