@@ -34,4 +34,10 @@ w.anotherHello("PSP", 11, true, 1, 2);
 let w1 = new Welcome("XYZ");
 console.log(w1.name);
 
-export {Welcome}
+class Test1{}
+class Test2{}
+class Test3{}
+class Test4{}
+
+export default Welcome
+export {Test1, Test2, Test3}

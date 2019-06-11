@@ -24,7 +24,6 @@ var Welcome = /** @class */ (function () {
     };
     return Welcome;
 }());
-exports.Welcome = Welcome;
 var w = new Welcome("PSP");
 console.log(w.name);
 console.log(w.d);
@@ -33,3 +32,27 @@ w.anotherHello("PSP", 11, true, "Patil");
 w.anotherHello("PSP", 11, true, 1, 2);
 var w1 = new Welcome("XYZ");
 console.log(w1.name);
+var Test1 = /** @class */ (function () {
+    function Test1() {
+    }
+    return Test1;
+}());
+exports.Test1 = Test1;
+var Test2 = /** @class */ (function () {
+    function Test2() {
+    }
+    return Test2;
+}());
+exports.Test2 = Test2;
+var Test3 = /** @class */ (function () {
+    function Test3() {
+    }
+    return Test3;
+}());
+exports.Test3 = Test3;
+var Test4 = /** @class */ (function () {
+    function Test4() {
+    }
+    return Test4;
+}());
+exports["default"] = Welcome;

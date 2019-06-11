@@ -1,4 +1,5 @@
-import {Welcome} from './Welcome'
+import Welcome from './Welcome'
+import {Test1, Test2} from './Welcome'
 
 class Messanger {
 
