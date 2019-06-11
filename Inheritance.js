@@ -15,8 +15,10 @@ var A = /** @class */ (function () {
     function A() {
     }
     A.prototype.add = function () {
+        console.log("Add Method");
     };
     A.prototype.sub = function () {
+        console.log("Sub Method");
     };
     return A;
 }());
@@ -31,3 +33,4 @@ var B = /** @class */ (function (_super) {
     };
     return B;
 }(A));
+new B().test();
