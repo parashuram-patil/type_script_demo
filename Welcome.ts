@@ -4,7 +4,7 @@ class Welcome {
     private c:Boolean = true;
     d:String = "public var d"
 
-    constructor(public name: String = "PSP") {
+    constructor(public name: String) {
         console.log(this.a);
         console.log(this.b);
         console.log(this.c);
@@ -24,7 +24,7 @@ class Welcome {
     }
 }
 
-let w = new Welcome();
+let w = new Welcome("PSP");
 console.log(w.name);
 console.log(w.d);
 w.hello();
@@ -33,3 +33,5 @@ w.anotherHello("PSP", 11, true, 1, 2);
 
 let w1 = new Welcome("XYZ");
 console.log(w1.name);
+
+export {Welcome}

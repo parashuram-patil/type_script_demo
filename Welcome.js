@@ -1,6 +1,7 @@
+"use strict";
+exports.__esModule = true;
 var Welcome = /** @class */ (function () {
     function Welcome(name) {
-        if (name === void 0) { name = "PSP"; }
         this.name = name;
         this.a = "10";
         this.b = 10;
@@ -23,7 +24,8 @@ var Welcome = /** @class */ (function () {
     };
     return Welcome;
 }());
-var w = new Welcome();
+exports.Welcome = Welcome;
+var w = new Welcome("PSP");
 console.log(w.name);
 console.log(w.d);
 w.hello();
