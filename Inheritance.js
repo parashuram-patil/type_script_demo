@@ -31,6 +31,12 @@ var B = /** @class */ (function (_super) {
         this.add();
         this.sub();
     };
+    B.prototype.div = function () {
+        console.log("Div Method");
+        return 10 / 2;
+    };
     return B;
 }(A));
-new B().test();
+var b = new B();
+b.test();
+b.div();

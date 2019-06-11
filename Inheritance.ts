@@ -1,4 +1,4 @@
-class A {
+abstract class A {
     add() {
         console.log("Add Method")
     }
@@ -6,6 +6,8 @@ class A {
     sub() {
         console.log("Sub Method")
     }
+
+    abstract div():Number;
 }
 
 class B extends A {
@@ -13,6 +15,14 @@ class B extends A {
         this.add();
         this.sub();
     }
+
+    div(): Number {
+        console.log("Div Method");
+
+        return 10/2;
+    }
 }
 
-new B().test();
+let b = new B();
+b.test();
+b.div();
