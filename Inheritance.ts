@@ -1,3 +1,5 @@
+import * as Constants from './Constants'
+
 abstract class A {
     add() {
         console.log("Add Method")
@@ -19,10 +21,10 @@ class B extends A {
     div(): Number {
         console.log("Div Method");
 
-        return 10/2;
+        return Constants.a/Constants.c;
     }
 }
 
 let b = new B();
 b.test();
-b.div();
+console.log(b.div());
